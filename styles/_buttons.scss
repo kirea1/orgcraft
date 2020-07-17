@@ -1,0 +1,21 @@
+@use "colors";
+@use "fonts";
+
+.btn.btn-main {
+  border: 2px solid colors.$accent !important;
+  color: colors.$accent;
+  min-width: 140px;
+  font-family: fonts.$textFont;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 50px !important;
+  letter-spacing: 1px;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  &:hover {
+    background-color: colors.$accent;
+    color: colors.$white;
+    text-shadow: 0 0 3px colors.$white;
+    box-shadow: 0 0 10px colors.$accent;
+  }
+}

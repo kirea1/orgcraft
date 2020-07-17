@@ -1,0 +1,173 @@
+@use "colors";
+@use "nav";
+@use "hero";
+@use "buttons";
+@use "sections";
+@use "footer";
+@use "fonts";
+@import "~bootstrap/scss/bootstrap";
+
+// general
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+h2,
+h3 {
+  font-family: fonts.$headingFont;
+  color: colors.$white;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 0;
+  line-height: 1;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px #333;
+  span {
+    color: colors.$accent;
+  }
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: colors.$textWhite;
+  font-family: fonts.$textFont;
+  span {
+    color: colors.$accent;
+  }
+}
+
+ul li {
+  color: colors.$textWhite;
+}
+
+hr.main-separator {
+  border-top: 2px solid colors.$accent;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.margin-box {
+  margin: 30px 0;
+}
+
+q {
+  quotes: "\201c""\201d";
+  color: colors.$textWhite;
+  font-size: 24px;
+  position: relative;
+  span {
+    color: colors.$accent;
+  }
+}
+q:before,
+q:after {
+  color: rgba(colors.$textWhite, 0.4);
+  position: absolute;
+  font-size: 180px;
+}
+q:before {
+  content: open-quote;
+  top: -90px;
+  left: -40px;
+}
+
+q:after {
+  content: close-quote;
+  right: -25px;
+  bottom: -190px;
+}
+
+// overrides
+button:focus {
+  outline: none !important;
+}
+.accordion {
+  border-radius: 0;
+  background-color: transparent;
+  .card {
+    background-color: colors.$bgColorDarker;
+    border-color: colors.$bgColorDarker;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 12.09px 0.91px rgba(0, 0, 0, 0.23);
+  }
+  button {
+    color: colors.$accentLighter;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: -10px;
+    transition: ease-in 0.4s all;
+    &:hover {
+      color: colors.$white;
+      text-decoration: none;
+    }
+  }
+  .card-header {
+    background-color: colors.$bgColorDarker;
+    position: relative;
+  }
+
+  .card-body {
+    background-color: colors.$offWhite;
+    padding: 40px 60px;
+    font-family: fonts.$textFont;
+    color: colors.$bgColorDark;
+  }
+  i {
+    color: colors.$accent;
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+  }
+}
+
+.accordion > .card:not(:last-of-type),
+.accordion > .card:not(:first-of-type) {
+  border-radius: 10px;
+}
+
+// other
+hr.main-sep {
+  height: 2px;
+  width: 20%;
+  background-color: colors.$accent;
+}
+
+.btn-link:focus,
+.btn-link.focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  q {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  q {
+    font-size: 20px;
+  }
+  q:before {
+    left: -10px;
+  }
+  q:after {
+    right: -30px;
+    bottom: -180px;
+  }
+}
+
+@media (max-width: 414px) {
+  q:before {
+    left: -20px;
+  }
+}
