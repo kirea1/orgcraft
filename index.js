@@ -76,7 +76,7 @@ $(document).ready(function () {
 });
 
 $("body").scrollspy({ target: "#main-nav" });
-$("#main-nav ul li a[href^='#']").on("click", function (e) {
+$("#main-nav a[href^='#']").on("click", function (e) {
   // prevent default anchor click behavior
   e.preventDefault();
 

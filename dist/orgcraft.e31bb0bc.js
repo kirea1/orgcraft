@@ -21436,7 +21436,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _jquery.default)("body").scrollspy({
   target: "#main-nav"
 });
-(0, _jquery.default)("#main-nav ul li a[href^='#']").on("click", function (e) {
+(0, _jquery.default)("#main-nav a[href^='#']").on("click", function (e) {
   // prevent default anchor click behavior
   e.preventDefault(); // store hash
 
