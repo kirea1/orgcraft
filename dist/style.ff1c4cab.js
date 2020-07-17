@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../assets/tower-bg.png":[["tower-bg.54ba7fc8.png","assets/tower-bg.png"],"assets/tower-bg.png"],"./../assets/ee-bg.png":[["ee-bg.d8dd4268.png","assets/ee-bg.png"],"assets/ee-bg.png"],"./../assets/quest-bg.jpg":[["quest-bg.23b5893d.jpg","assets/quest-bg.jpg"],"assets/quest-bg.jpg"],"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../assets/conthrax-sb.ttf":[["conthrax-sb.db88225a.ttf","assets/conthrax-sb.ttf"],"assets/conthrax-sb.ttf"],"./../assets/tower-bg.png":[["tower-bg.54ba7fc8.png","assets/tower-bg.png"],"assets/tower-bg.png"],"./../assets/ee-bg.png":[["ee-bg.d8dd4268.png","assets/ee-bg.png"],"assets/ee-bg.png"],"./../assets/quest-bg.jpg":[["quest-bg.23b5893d.jpg","assets/quest-bg.jpg"],"assets/quest-bg.jpg"],"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

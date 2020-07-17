@@ -109,7 +109,7 @@
     box-shadow: 0px 5px 12.09px 0.91px rgba(0, 0, 0, 0.23);
     z-index: 50;
     position: relative;
-    min-height: 677px;
+    min-height: 96%;
   }
   .team-box {
     background-color: colors.$bgColorDark;
@@ -183,25 +183,10 @@
   }
 }
 
-@media (min-width: 1325px) {
-  #rpr > div > div > div.col-lg-6.col-md-6.float-lg-right {
-    margin-top: -130px;
-  }
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-  #rpr {
-    min-height: 120vh;
-  }
-  #rpr > div > div > div.col-lg-6.col-md-6.float-lg-right {
-    margin-top: -20px;
-  }
+@media (max-width: 1023px) and (min-width: 769px) {
   #tower,
   #ee {
     padding-top: 30%;
-  }
-  #orgmasters .quote-box {
-    min-height: 500px;
   }
 }
 
@@ -210,9 +195,13 @@
     padding: 40px 20px;
     min-height: 300px;
   }
+
+  #quest > div > div > div > div > div > div:nth-child(2) > p {
+    margin-top: 20px;
+  }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 650px) {
   #rpr {
     padding-top: 4em;
   }
@@ -223,10 +212,6 @@
   #quest .quest-box,
   #orgmasters .quote-box {
     padding: 40px 20px;
-  }
-
-  #orgmasters .quote-box {
-    min-height: 300px;
   }
 
   .team-box {
